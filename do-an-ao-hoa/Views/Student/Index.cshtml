@@ -1,0 +1,108 @@
+﻿@model IEnumerable<do_an_ao_hoa.Models.Student>
+
+@{
+    ViewBag.Title = "Danh sách sinh viên";
+    var i = 1;
+    var count = 0;
+    foreach (var item in Model)
+    {
+        count++;
+    }
+}
+@section styles{
+    <link href="~/Assets/css/toast.css" rel="stylesheet" />
+}
+<h2 class="text-center text-secondary">Danh sách sinh viên</h2>
+
+<p class="noti text-center" style="clear:both">Hiện tại không tìm thấy sinh viên nào.<a href="~/Student/Create">Click vào đây</a> để thêm sinh viên.</p>
+@if (count != 0)
+{
+    <p class="pr-1 btnadd" style="float:right;">
+        @Html.ActionLink("Thêm sinh viên", "Create", null, new { @class = "btn btn-outline-info" })
+    </p>
+    <div class="table-responsive table-student">
+        <table class="table  table-hover">
+
+            <thead class="thead-light">
+                <tr>
+                    <th>
+                        #
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.code)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.phone)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.address)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.image)
+                    </th>
+                    <th>
+                        Công cụ
+                    </th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr id="student_@item._id">
+                    <td>
+                        @(i++)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.code)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.address)
+                    </td>
+                    <td>
+                        <img style="width:60px" src="~/Assets/img/@item.image" alt="Erro image" />
+                    </td>
+                    <td>
+                        <a style="padding-right:12px;text-decoration:none;" title="Sửa sinh viên @item.name" href="/Student/Edit/@item._id">
+                            <i class="far fa-edit"></i>
+                        </a>
+                        <a class="btndelete" data-name="@item.name" title="Xoá sinh viên @item.name" href="/" data-id="@item._id" style="text-decoration:none;">
+                            <i class="far fa-trash-alt"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    <script>
+        $('.noti').hide();
+
+    </script>
+}
+else
+{
+    <script>
+        $('.noti').show();
+
+    </script>
+}
+@section scripts{
+
+    <script src="~/Assets/js/toast.js"></script>
+    <script src="~/Assets/js/main.js"></script>
+
+}

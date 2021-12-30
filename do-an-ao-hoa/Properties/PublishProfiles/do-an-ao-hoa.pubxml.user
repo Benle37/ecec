@@ -18,8 +18,23 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Assets/img/background.png">
       <publishTime>12/21/2021 11:23:57</publishTime>
     </File>
+    <File Include="Assets/img/brand1.jpg">
+      <publishTime>12/21/2021 14:37:10</publishTime>
+    </File>
+    <File Include="Assets/img/brand2.jpg">
+      <publishTime>12/21/2021 14:32:57</publishTime>
+    </File>
+    <File Include="Assets/img/brand5.jpg">
+      <publishTime>12/21/2021 13:08:41</publishTime>
+    </File>
+    <File Include="Assets/img/brand6.jpg">
+      <publishTime>12/21/2021 14:37:26</publishTime>
+    </File>
+    <File Include="Assets/img/loading.gif">
+      <publishTime>12/29/2021 19:18:59</publishTime>
+    </File>
     <File Include="Assets/js/main.js">
-      <publishTime>12/21/2021 14:53:20</publishTime>
+      <publishTime>12/29/2021 19:28:14</publishTime>
     </File>
     <File Include="Assets/js/toast.js">
       <publishTime>12/21/2021 13:14:41</publishTime>
@@ -34,7 +49,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/01/2017 09:09:22</publishTime>
     </File>
     <File Include="bin/do-an-ao-hoa.dll">
-      <publishTime>12/21/2021 20:10:47</publishTime>
+      <publishTime>12/29/2021 19:28:43</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>12/07/2015 19:04:38</publishTime>
@@ -229,7 +244,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/20/2021 17:03:54</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>12/21/2021 14:01:18</publishTime>
+      <publishTime>12/22/2021 09:59:49</publishTime>
     </File>
     <File Include="Views/Student/Create.cshtml">
       <publishTime>12/21/2021 14:00:25</publishTime>
@@ -244,7 +259,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/21/2021 13:22:00</publishTime>
     </File>
     <File Include="Views/Student/Index.cshtml">
-      <publishTime>12/21/2021 14:11:22</publishTime>
+      <publishTime>12/29/2021 19:26:28</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>12/20/2021 17:03:54</publishTime>
@@ -253,7 +268,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/20/2021 17:03:54</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/20/2021 21:30:53</publishTime>
+      <publishTime>12/29/2021 19:28:49</publishTime>
     </File>
   </ItemGroup>
 </Project>

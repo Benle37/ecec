@@ -3,6 +3,8 @@
         e.preventDefault();
         var name = $(this).data('name');
         if (confirm('Bạn muốn xoá sinh viên ' + name)) {
+            $('.load-modal').css('display', 'flex');
+
             var id = $(this).data('id');
             $.ajax({
                 url: "/Student/Delete",
@@ -12,6 +14,8 @@
                 type: "POST",
                 success: function (data) {
                     if (data.status == "1") {
+                        $('.load-modal').css('display','none');
+
                         showToast(`Xoá sinh viên ${name} thành công.`);
                         $('#student_' + id).hide(200);
                         $('#student_' + id).addClass('check');
@@ -28,7 +32,8 @@
                             $('.table-student').hide(200);
                             $('.noti').show(400);
                             $('.btnadd').hide(200);
-                        }                       
+                        }
+
                     }
                     else
                         showToast(`Xoá sinh viên ${name} thất bại`);

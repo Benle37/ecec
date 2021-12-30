@@ -182,6 +182,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\css\toast.css" />
+    <Content Include="Assets\img\brand1.jpg" />
+    <Content Include="Assets\img\brand2.jpg" />
+    <Content Include="Assets\img\brand5.jpg" />
+    <Content Include="Assets\img\brand6.jpg" />
+    <Content Include="Assets\img\loading.gif" />
     <Content Include="Assets\js\main.js" />
     <Content Include="Assets\js\toast.js" />
     <Content Include="Content\bootstrap.css" />

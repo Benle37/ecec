@@ -10,8 +10,27 @@
     }
 }
 @section styles{
+    <style>
+        .load-modal{
+                position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    backdrop-filter: brightness(0.5);
+    justify-content: center;
+    align-items: center;
+    display:none;
+        }
+        .load-modal img{
+            width:250px;
+        }
+    </style>
     <link href="~/Assets/css/toast.css" rel="stylesheet" />
 }
+<div class="load-modal">
+    <img src="/Assets/img/loading.gif"/>
+</div>
 <h2 class="text-center text-secondary">Danh sách sinh viên</h2>
 
 <p class="noti text-center" style="clear:both">Hiện tại không tìm thấy sinh viên nào.<a href="~/Student/Create">Click vào đây</a> để thêm sinh viên.</p>

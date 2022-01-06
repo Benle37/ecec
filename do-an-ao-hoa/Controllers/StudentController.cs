@@ -47,7 +47,7 @@ namespace do_an_ao_hoa.Controllers
 
         // POST: Student/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public  ActionResult Create(FormCollection collection)
         {
             Object _id = random(24);
             var file = Request.Files["file"];
